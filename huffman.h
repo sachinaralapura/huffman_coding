@@ -109,7 +109,6 @@ void HuffmanTree::createTree(ifstream &file)
         nodeQueue.push(root);
     }
     assignCodes(root);
-    printCodes();
 }
 
 void HuffmanTree::assignCodes(Node *node, string code)
