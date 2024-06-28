@@ -10,6 +10,6 @@ int main(int argc, char const *argv[])
     HuffmanTree ht;
     ht.createTree(file);
     ht.printCodes();
-
+    unordered_map<char, string> codes = ht.getCodes();
     return 1;
 }

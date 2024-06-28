@@ -65,6 +65,7 @@ public:
     void printPriorityQueue();
     void assignCodes(Node *node, string code = "");
     void printCodes();
+    unordered_map<char, string> getCodes() { return codes; }
 };
 
 void HuffmanTree::readFile(ifstream &file)
@@ -127,9 +128,7 @@ void HuffmanTree::assignCodes(Node *node, string code)
 void HuffmanTree::printCodes()
 {
     for (const auto &[ch, str] : codes)
-    {
         cout << ch << " : " << str << endl;
-    }
 }
 
 void HuffmanTree::printPriorityQueue()
